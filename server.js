@@ -40,9 +40,13 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 // Database configuration with mongoose
-mongoose.connect("");
-//mongoose.connect("mongodb://localhost/mongoscraper");
+/* mongoose.connect(""); */
+
+mongoose.connect("mongodb://localhost/Mongo-Scraper");
+//mongoose.connect("mongodb://localhost/Mongo-Scraper");
 var db = mongoose.connection;
+
+
 
 // Show any mongoose errors
 db.on("error", function(error) {
