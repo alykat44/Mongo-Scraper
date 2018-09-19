@@ -1,6 +1,23 @@
 body {
-    background-image: url("./css/images/lameguy.jpg");
+    background-image: url("/images/skyline.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
     
 }
+ .navbar-brand   {
+     padding: 30;;
+     font-size: 40px;
+     font-style: italic;
+     
 
+ }
+
+ .nav-link {
+    font-size: 20px;
+    font-style: bold;
+
+ }
 

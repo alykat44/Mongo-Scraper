@@ -1,3 +1,5 @@
+// dependencies
+
 var express=require("express");
 var bodyParser=require("body-parser");
 var mongoose=require("mongoose");
@@ -21,6 +23,9 @@ app.engine(
   app.set("view engine", "handlebars");
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Mongo-Scraper";
+
+/* mongoose.connect("//https://vast-brook-29511.herokuapp.com/"); */
+
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
@@ -85,8 +90,8 @@ app.get("/scrape",function(req,res){
                         console.log(dbArticle);
                     })
                     .catch(function(err){
-                        //console.log(err);
-                        //return res.json(err);
+                    
+                        
                     });
             })
         }
