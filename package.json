@@ -1,5 +1,5 @@
 {
-  "name": "Mongo-Scraper",
+  "name": "mongo-scraper",
   "version": "1.0.0",
   "description": "Mongo",
   "main": "node server.js",
@@ -17,10 +17,11 @@
   "author": "Annette Yeager",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alykat44/Mongo-Scraper/issues"
+    "url": "https://github.com/alykat44/Mongo-Scraper"
   },
-  "homepage": "https://github.com/alykat44/Mongo-Scraper#readme",
+  "homepage": "https://github.com/alykat44/Mongo-Scraper",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.2",
     "express": "^4.16.3",
